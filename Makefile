@@ -14,7 +14,7 @@ STATICLAPACKLDFLAGS=-fPIC -lf77blas -Wall -g -fopenmp -static -static-libstdc++ 
 
 CFLAGS= -fPIC -Wall -g -std=c++11 $(LAPACKCFLAGS) -fopenmp -DUSE_OPENMP -O3
 LDFLAGS=-fPIC -Wall -g -ljpeg -lpng -fopenmp -lblas 
-CPYTHONFLAGS=-I/usr/include/python3.6m
+CPYTHONFLAGS=-I/usr/local/include/python3.6m
 LIBFLAGS=-ljpeg -lpng -lblas
 
 SOURCES := $(shell find . -name '*.cpp' ! -name 'deepmatching_matlab.cpp')
